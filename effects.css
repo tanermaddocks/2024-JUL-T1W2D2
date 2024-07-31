@@ -47,8 +47,8 @@ img {
     background-color: blue;
 
     animation-name: animation-for-second;
-    animation-duration: 4s;
-    animation-iteration-count: 4;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
 }
 
 @keyframes animation-for-second {
@@ -66,5 +66,42 @@ img {
     }
     100% {
         width: 100px;
+    }
+}
+
+.parent-typing-effect {
+    margin-top: 50px;
+    display: flex;
+}
+
+.typing-effect {
+    font-size: 24px;
+
+    animation: typing-effect 0.8s, change-width 4s steps(32, end);
+    animation-iteration-count: infinite;
+
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes change-width {
+    0% {
+        width: 0;
+    }
+    25% {
+        width: 0;
+    }
+    75% {
+        width: 100%;
+    }
+ 
+}
+
+@keyframes typing-effect {
+    0% {
+        border-right: none;
+    }
+    100% {
+        border-right:1px solid aliceblue;
     }
 }
