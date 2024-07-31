@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(68, 68, 68);
+    color:aliceblue;
+}
+
+.flex-parent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    height: 90vh;
+    border: 1px solid maroon;
+
+    /* the default main axis (flex-direction) is row */
+    /* 'justify content' align items along the main axis */
+    /* 'align items' aligns items along the cross axis */
+
+}
+
+.flex-child {
+    height: 80px;
+    width: 80px;
+
+    font-size: 48px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: black;
+    background-color: maroon;
+    
+    margin: 10px;
+}
+
+.item-1 {
+    /* 
+    flex-grow: 1;
+    flex-shrink: 2; 
+    */
+}
