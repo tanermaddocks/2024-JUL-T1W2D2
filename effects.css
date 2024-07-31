@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(68, 68, 68);
+    color:aliceblue;
+}
+
+
+.first {
+    width: 100px;
+    height: 100px;
+
+    background-color: maroon;
+    transition: 2s;
+
+}
+
+.first:hover {
+    /* width:200px; */
+    transform: scale(2) translate(70px, 70px) rotate(45deg);
+    background-color: blue;
+}
